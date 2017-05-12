@@ -1,6 +1,18 @@
 [![Build Status](https://travis-ci.org/explooosion/Node.js-demo.svg?branch=master)](https://travis-ci.org/explooosion/Node.js-demo)　　
 
-# Node.js-demo
-this is a demo 
+# Clone
+```bash
+git clone https://github.com/explooosion/Node.js-demo.git
+```
 
-run at https://mydemo-robby570.c9users.io:8080/
+# Install
+```bash
+npm install
+```
+
+# Run
+```bash
+npm start
+```
+
+
