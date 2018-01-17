@@ -69,19 +69,18 @@ cd Node.js-demo/
 
 ## Docker Build
 + 建立映像檔
+	+ demo: namespace
+	+ myapp: project
 ```bash
 docker build -t demo/myapp .
 ```
-	+ demo: namespace
-	+ myapp: project
 
 + 查看映像檔(可看到已有容器)
+	+ -a:所有過去容器
+	+ -q:僅顯示ID
 ```bash
 docker images
 ```
-	+ -a:所有過去容器
-	+ -q:僅顯示ID
-
 
 ## Docker Run
 + 建立容器並運行
@@ -92,11 +91,11 @@ docker run -p 8080:3000 --name myapp -d demo/myapp
 	+ 外部的 8080 映射到容器的 3000
 
 + 查看容器運行狀態(應該會出現剛剛執行的)
+	+ -a:包含過去容器
+	+ -q:僅顯示容器ID
 ```bash
 docker ps -a
 ```
-	+ -a:包含過去容器
-	+ -q:僅顯示容器ID
 
 ## Docker Stop
 + 停止容器運行
