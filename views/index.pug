@@ -3,10 +3,9 @@ extends layout
 block home
 
   h2 TodoList
-
-  form(name='addform', action='/api/todo', method='post', accept-charset='utf-8')
-    input(name='item' , type='text' , value='' , placeholder='請輸入事項')
-    button(type='submit') 新增
+    div.form
+      input(id='itemName' , type='text' , value='' , placeholder='請輸入事項')
+      button(type='button' , onclick='Add()') 新增
 
   ul
       each d in data

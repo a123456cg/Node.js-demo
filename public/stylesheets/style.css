@@ -6,3 +6,37 @@ body {
     padding: 50px;
     color: #405467;
 }
+
+input[type='text'] {
+    margin: 0 4px;
+    padding: 0 4px;
+    width: 140px;
+    height: 26px;
+}
+
+button {
+    margin: 0 4px;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:active {
+    background-color: #353535;
+}
+
+.form {
+    margin: 0.6em 0;
+}
+
+ul li {
+    margin: 0.6em 0;
+}
