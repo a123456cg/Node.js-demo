@@ -1,0 +1,17 @@
+extends layout
+
+block home
+
+  h2 TodoList
+
+  form(name='addform', action='/api/todo', method='post', accept-charset='utf-8')
+    input(name='item' , type='text' , value='' , placeholder='請輸入事項')
+    button(type='submit') 新增
+
+  ul
+      each d in data
+        li
+          label(for=d._id)= d.item
+          input(id=d._id , type='checkbox', checked=d.done , onclick=`Checked('${d._id}',${d.done})`)
+          button(type='button' , onclick=`Delete('${d._id}')`) 刪除
+

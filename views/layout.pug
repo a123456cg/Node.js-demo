@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Express With MongoDB
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+    script(src='/javascripts/app.js')
+
+  body
+    h1 Express With MongoDB
+    p template by jade (Pug) 
+
+    case route
+      when 'home': block home
+      when 'edit': block edit
+      when 'add': block add
+      default: block home
