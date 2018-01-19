@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,6 +11,10 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+const mongoose = require('mongoose');
+mongoose.connect(`mongodb://${process.env.DB_HOST}/${process.env.DB_DATABASE}`);
+mongoose.Promise = global.Promise;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

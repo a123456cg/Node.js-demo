@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  table.list
+      thead
+        tr
+          th item
+          th done
+      each item in data
+        tr
+          td= item.item
+          td= item.done
