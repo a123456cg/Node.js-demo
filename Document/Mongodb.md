@@ -17,6 +17,15 @@ mkdir c:\data\log
 C:\Program Files\MongoDB\Server\3.6\mongod.cfg
 ```
 
++ mongod.cfg
+```bash
+systemLog:
+    destination: file
+    path: c:\data\log\mongod.log
+storage:
+    dbPath: c:\data\db
+```
+
 + install as a service
 ```bash
 "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\mongod.cfg" --install
