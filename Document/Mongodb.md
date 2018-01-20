@@ -3,6 +3,10 @@
 ## Download
 + [Mongodb](https://www.mongodb.com/download-center#community)
 
++ do not install 
+```bash
+Install MongoDB Community Edition
+```
 ## Configure a Windows Service
 
 + [web](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#configure-a-windows-service-for-mongodb-community-edition)
@@ -26,7 +30,7 @@ storage:
     dbPath: c:\data\db
 ```
 
-+ install as a service
++ install as a service (use admin)
 ```bash
 "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\mongod.cfg" --install
 ```
